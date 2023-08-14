@@ -1,0 +1,30 @@
+{
+  "name": "explorari-server",
+  "version": "1.0.0",
+  "description": "This project responsible for security and request which is coming from user. The projects main idea to create a journey route which is getting help from an ai.",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmniaPotentia/explorari-server.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "rest-api",
+    "ai"
+  ],
+  "author": "Omnia Potentia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OmniaPotentia/explorari-server/issues"
+  },
+  "homepage": "https://github.com/OmniaPotentia/explorari-server#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.10",
+    "typescript": "^5.1.6"
+  }
+}

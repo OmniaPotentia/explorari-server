@@ -29,6 +29,18 @@ pipeline {
             }
         }
 
+        stage('Scan with SonarQube') {
+            steps {
+                script {
+                    sh './mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
+                    //def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+                    /*withSonarQubeEnv('SonarQube Server') {
+                        sh "${scannerHome}/bin/sonar-scanner"
+                    }*/
+                }
+            }
+        }
+
         stage('Build and Deploy') {
             steps {
                 echo 'Building and deploying...'

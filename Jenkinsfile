@@ -37,18 +37,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            // Clean up any resources or artifacts here
-        }
-
-        success {
-            echo "Pipeline succeeded!"
-        }
-
-        failure {
-            echo "Pipeline failed!"
-        }
-    }
 }
